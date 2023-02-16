@@ -90,23 +90,3 @@ col1, col2, col3, col4 = st.columns((4,1,1,1))
 with col1:
     st.altair_chart(chart, use_container_width=True)
 st.altair_chart(chart2, use_container_width=True)
-
-# # Create the bar chart using Altair
-# chart = alt.Chart(df).mark_bar().encode(
-#     x='state:N',
-#     y='total_amount:Q',
-#     tooltip=['state:N', 'total_amount:Q', 'total_count:Q']
-# )
-
-# # Set the chart title and axis labels
-# chart = chart.properties(
-#     title=f"Total Amount by State for {year} ({name})",
-#     width=600,
-#     height=400
-# ).configure_axis(
-#     labelFontSize=12,
-#     titleFontSize=14
-# )
-
-# # Display the chart in the Streamlit app
-# st.altair_chart(chart, use_container_width=True)
